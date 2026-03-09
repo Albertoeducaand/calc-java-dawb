@@ -43,4 +43,8 @@ public class Calc {
     public static void showResult(String operation, int result) {
         System.out.println("El resultado de la operación \"" + operation + "\" es: " + result);
     }
+
+    public static int modulo(int num1, int num2) {
+        return num1 % num2;
+    }
 }
