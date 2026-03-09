@@ -33,6 +33,8 @@ public class Calc {
                 return multiplica(num1, num2);
             default:
                 throw new IllegalArgumentException("Operación no soportada");
+            case "resta":
+        return resta(num1, num2);
         }
     }
 
@@ -42,5 +44,9 @@ public class Calc {
 
     public static void showResult(String operation, int result) {
         System.out.println("El resultado de la operación \"" + operation + "\" es: " + result);
+    }
+
+    public static int resta(int num1, int num2) {
+        return num1 - num2;
     }
 }
